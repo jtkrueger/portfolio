@@ -500,7 +500,7 @@ footer {
 }
 
 .contactblurb {
-	width: 25em; /* 400px */
+	width: $cols4; 
 	float: left;
 }
 
@@ -509,8 +509,8 @@ footer {
 }
 
 fieldset {
-	font-size: 0.875em; /* 14px */
-	width: 29em; /* 406px */
+	font-size: 14px;
+	width: $cols4 - 32px; /* 406px */
 	padding: 15px;
 	background-color: #EBF2F2;
 	border-top: 1px solid #C6CCCC;
@@ -520,6 +520,10 @@ fieldset {
 	display: block;
 	float: right;
 	position: relative;
+}
+
+fieldset p {
+	font-size: 14px;
 }
 
 input, textarea {
