@@ -5,6 +5,25 @@
 */
 
 
+@mixin transition($property, $duration) {
+	-webkit-transition: $property $duration ease-in-out;
+  	   -moz-transition: $property $duration ease-in-out;
+  		 -o-transition: $property $duration ease-in-out;
+  		    transition: $property $duration ease-in-out;
+}
+
+@mixin box-shadow($inset, $horizontal, $vertical, $blur, $spread, $color) {
+	 -webkit-box-shadow: unquote($inset) $horizontal $vertical $blur $spread $color;
+		-moz-box-shadow: unquote($inset) $horizontal $vertical $blur $spread $color;
+	   		 box-shadow: unquote($inset) $horizontal $vertical $blur $spread $color;
+}
+
+$color1: #3b8a86;
+$text-color: #354C4b; /* previously #262626 */
+$color2: #be1e2d;
+$hover-link-color: lighten($color2, 10); /* #e52436 */
+
+
 //
 // Configuration
 //
